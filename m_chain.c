@@ -38,9 +38,9 @@ int is_chain(info_t *information, char *buffer, size_t *pointer)
 		x++;
 		information->cmd_buf_type = CMD_AND;
 	}
-	else if (buffer[x] == ';') /* found end of this command */
+	else if (buffer[x] == ';')
 	{
-		buffer[x] = 0; /* replace semicolon with null */
+		buffer[x] = 0;
 		information->cmd_buf_type = CMD_CHAIN;
 	}
 	else

@@ -13,7 +13,7 @@ int _myhelp(info_t *information)
 	array = information->argv;
 	_puts("help call works. Function not yet implemented \n");
 	if (0)
-		_puts(*array); /* temp att_unused workaround */
+		_puts(*array);
 	return (0);
 }
 
@@ -27,7 +27,7 @@ int _myexit(info_t *information)
 {
 	int quit;
 
-	if (information->argv[1])  /* If there is an exit arguement */
+	if (information->argv[1])
 	{
 		quit = _erratoi(information->argv[1]);
 		if (quit == -1)
